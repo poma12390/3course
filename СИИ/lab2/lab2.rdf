@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2">
+        <rdfs:comment xml:lang="en">Hero</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasItem">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Item"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Role"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#anti_mage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#anti_mage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#dead"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#feed"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#mana_void"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasItem"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#battlefury"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasRole"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#carry"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#battlefury -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#battlefury">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#beer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#beer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#blink -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#blink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#boots_of_travel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#boots_of_travel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#carry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#carry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#dead -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#dead">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#disabler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#disabler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#emp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#emp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#feed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#feed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#gds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#gds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#invoke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#invoke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#invoker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#invoker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#dead"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#feed"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#invoke"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasItem"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#wall"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasItem"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#wine"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasRole"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#support"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#kaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#kaya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#lina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#lina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#dead"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#feed"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#wall"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasItem"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#kaya"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasRole"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#carry"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#mana_void -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#mana_void">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#mango -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#mango">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#pudge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#pudge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#dead"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#feed"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#gds"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasItem"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#boots_of_travel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasItem"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#mango"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasRole"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#carry"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasRole"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#support"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#sange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#sange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#support -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#support">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#sven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#sven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Hero"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#dead"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#feed"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasAbility"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#gds"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasItem"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#boots_of_travel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasItem"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#mango"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasRole"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#carry"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#hasRole"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#support"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#tornado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#tornado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#wall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#wall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Ability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#wine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#wine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pomat/ontologies/2023/8/untitled-ontology-2#Item"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
