@@ -60,8 +60,7 @@ same_hero(Hero1, Hero2) :-
     Hero1 == Hero2.
 
 % Сильное дуо - саппорт + керри
-strong
-_duo(Hero1, Hero2) :-
+strong_duo(Hero1, Hero2) :-
     (role(Hero1, carry),
     role(Hero2, support));
     (role(Hero2, carry),
