@@ -34,7 +34,7 @@ def cache_metrics():
     cache_misses_percent = []
     cache_references_num = []
     for i in range(1, 17, 2):
-        sp = run_stress_ng(f'sudo perf stat -e cache-references,cache-misses stress-ng --cache 1 --cache-level {i} --timeout 20')
+        sp = run_stress_ng(f'sudo perf stat -e cache-references,cache-misses stress-ng --cache 1 --l1cache-line-size {i} --timeout 20')
         output = sp.communicate()[1]
         output = output.split('\n')
         refs = output[6]
@@ -60,9 +60,9 @@ def cache_metrics():
 
     cache_misses_percent = []
     cache_references_num = []
-    for i in range(1048576, 8388608, 1048576):
+    for i in range(1000, 1000000, 200000):
         sp = run_stress_ng(
-            f'sudo perf stat -e cache-references,cache-misses stress-ng --cache 1 --l1cache-size {i} --timeout 20')
+            f'sudo perf stat -e cache-references,cache-misses stress-ng --cache 1 --l1cache-line-size {i} --timeout 20')
         output = sp.communicate()[1]
         print(output)
         output = output.split('\n')
