@@ -1,0 +1,35 @@
+sudo chmod o+rx /sys/kernel/debug
+cd ~/lab2/lab_2/driver
+sudo insmod driver.ko
+echo "#### Driver Loaded ####"
+
+echo "#### Driver Tests ####"
+cd ..
+echo "./usermod"
+./usermod
+
+echo ""
+echo "./usermod 0"
+./usermod 0 1
+echo ""
+echo "./usermod 1 1"
+./usermod 1 1
+echo "./usermod 1 14"
+./usermod 1 14
+
+
+###
+#echo "./usermod 0"
+#./usermod 0 1
+
+echo "#### Contents of the 'struct_info' file ####"
+#cd /sys/kernel/debug/lab
+cat /sys/kernel/debug/lab/struct_info
+
+
+# dmesg
+cd ~/lab2/lab_2/driver
+
+echo "#### Driver Unloaded ####"
+sudo rmmod driver
+#dmesg
