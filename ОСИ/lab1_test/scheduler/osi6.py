@@ -93,3 +93,17 @@ def sh_test():
 
 
 sh_test()
+
+(time (
+curl -s 'http://localhost:5000/fibonacci?n=38' & 
+curl -s 'http://localhost:5000/fibonacci?n=38' & 
+curl -s 'http://localhost:5000/fibonacci?n=38' & 
+curl -s 'http://localhost:5000/fibonacci?n=38' & 
+curl -s 'http://localhost:5000/fibonacci?n=38' & 
+curl -s 'http://localhost:5000/fibonacci?n=38' & 
+curl -s 'http://localhost:5000/fibonacci?n=38' & 
+curl -s 'http://localhost:5000/fibonacci?n=38' & 
+curl -s 'http://localhost:5000/fibonacci?n=38' & 
+curl -s 'http://localhost:5000/fibonacci?n=38' & 
+wait
+)) 2>&1
