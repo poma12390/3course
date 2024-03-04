@@ -19,7 +19,7 @@ static ssize_t my_read(struct file *fp, char __user *user_buffer, size_t length,
 
 static ssize_t my_write(struct file *fp, const char __user *user_buffer, size_t length, loff_t *position)
 {
-    // Для этого примера write не делает ничего, но здесь Вы можете добавить необходимую функциональность
+
     return length;
 }
 
